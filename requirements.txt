@@ -1,0 +1,7 @@
+# Dipendenze necessarie per PDF to PowerPoint Converter
+PyMuPDF>=1.23.0
+python-pptx>=0.6.21
+Pillow>=9.0.0
+
+# Installazione:
+# pip install -r requirements.txt

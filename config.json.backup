@@ -1,0 +1,61 @@
+{
+  "conversion_method": "method2",
+  "methods": {
+    "method1": {
+      "name": "PyMuPDF (fitz)",
+      "description": "Usa PyMuPDF per convertire PDF in immagini. Più veloce ma qualità potenzialmente inferiore.",
+      "dependencies": [
+        "PyMuPDF",
+        "python-pptx",
+        "Pillow"
+      ],
+      "dpi_equivalent": 144,
+      "advantages": [
+        "Veloce",
+        "Meno dipendenze esterne",
+        "Buon controllo sulla risoluzione"
+      ],
+      "disadvantages": [
+        "Qualità potenzialmente inferiore per alcuni PDF",
+        "Meno opzioni di personalizzazione"
+      ]
+    },
+    "method2": {
+      "name": "pdf2image + Poppler",
+      "description": "Usa pdf2image con Poppler per una conversione di alta qualità.",
+      "dependencies": [
+        "pdf2image",
+        "python-pptx",
+        "Pillow",
+        "poppler-utils"
+      ],
+      "dpi_default": 300,
+      "advantages": [
+        "Alta qualità di conversione",
+        "Migliore gestione delle proporzioni",
+        "Supporto DPI personalizzabile"
+      ],
+      "disadvantages": [
+        "Richiede installazione di Poppler",
+        "Più lento per PDF grandi",
+        "Maggiore uso di memoria"
+      ]
+    }
+  },
+  "output_settings": {
+    "default_output_name": "converted_presentation.pptx",
+    "slide_dimensions": {
+      "width_inches": 10,
+      "height_inches": 7.5
+    },
+    "image_quality": {
+      "method1_matrix_scale": 2,
+      "method2_dpi": 300
+    }
+  },
+  "file_paths": {
+    "input_pdf": "test.pdf",
+    "output_directory": "./output/",
+    "temp_directory": "./temp/"
+  }
+}
