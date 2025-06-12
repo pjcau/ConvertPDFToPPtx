@@ -19,11 +19,7 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-### Setup Manuale
-
-```bash
-pip install PyMuPDF python-pptx Pillow
-```
+ 
 
 ## ⚙️ Configurazione
 
@@ -58,18 +54,12 @@ Modifica il file `config.json` per personalizzare il comportamento:
 
 ### Conversione Automatica
 ```bash
-python3 src/pdf_converter.py
+python3 src/pdf_converter.py ../main.pdf output.pptx
 ```
 
 ### Conversione Personalizzata
 ```bash
-python3 src/pdf_converter.py input.pdf output.pptx
-```
-
-### Comandi Utili
-```bash
-# Mostra aiuto
-python3 src/pdf_converter.py --help
+./convert.sh input.pdf output.pptx
 ```
 
 ## 📁 Struttura del Progetto
