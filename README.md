@@ -51,15 +51,16 @@ Modifica il file `config.json` per personalizzare il comportamento:
 - **`default_output_name`**: Nome del file di output
 
 ## 🎯 Utilizzo
+ 
+
+### Conversione Personalizzata
+```bash
+./convert.sh ../main.pdf output.pptx
+```
 
 ### Conversione Automatica
 ```bash
 python3 src/pdf_converter.py ../main.pdf output.pptx
-```
-
-### Conversione Personalizzata
-```bash
-./convert.sh input.pdf output.pptx
 ```
 
 ## 📁 Struttura del Progetto
