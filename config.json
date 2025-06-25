@@ -5,12 +5,8 @@
     },
     "output_settings": {
         "default_output_name": "converted_presentation.pptx",
-        "slide_dimensions": {
-            "width_inches": 10,
-            "height_inches": 7.5
-        },
         "image_quality": {
-            "matrix_scale": 6
+            "matrix_scale": 8
         }
     }
 }
